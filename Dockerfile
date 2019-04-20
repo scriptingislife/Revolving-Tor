@@ -7,5 +7,9 @@ RUN apk add --no-cache tor haproxy polipo curl
 
 ADD tor.conf /
 ADD polipo.conf /
+ADD entry.sh /
+RUN chmod +x ./entry.sh
 
-ENTRYPOINT [ "/bin/sh" ]
+EXPOSE 9060
+
+ENTRYPOINT [ "/entry.sh" ]
