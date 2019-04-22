@@ -12,4 +12,4 @@ RUN chmod +x ./entry.sh
 
 EXPOSE 9060
 
-ENTRYPOINT [ "/entry.sh" ]
+ENTRYPOINT "/entry.sh"

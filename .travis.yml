@@ -5,8 +5,10 @@ services:
 
 install:
   - make build
+  - docker images
 
 script:
   - make daemon
+  - docker ps
   - curl --proxy localhost:9060 http://httpbin.org/ip
   - curl --proxy localhost:9060 http://httpbin.org/ip
