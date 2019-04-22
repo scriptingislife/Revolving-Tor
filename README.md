@@ -2,8 +2,10 @@
 
 A rotating proxy using Tor.
 
-`make build`
+```
+make build
 
-`make daemon`
+make daemon
 
-`curl --proxy localhost:9060 http://httpbin.org/ip`
+curl --proxy localhost:9060 http://httpbin.org/ip
+```
