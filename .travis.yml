@@ -1,0 +1,12 @@
+language: generic
+
+services:
+  - docker
+
+install:
+  - make build
+
+script:
+  - make daemon
+  - curl --proxy localhost:9060 http://httpbin.org/ip
+  - curl --proxy localhost:9060 http://httpbin.org/ip

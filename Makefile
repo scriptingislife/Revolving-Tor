@@ -5,5 +5,8 @@ build:
 run:
 	docker run -it --rm --name rev-tor --entrypoint=/bin/sh -p 9060:9060 -p 13050:13050 revolving-tor
 
+daemon:
+	docker run -d --rm --name rev-tor --entrypoint=/bin/sh -p 9060:9060 -p 13050:13050 revolving-tor
+
 stop kill:
 	docker kill rev-tor
