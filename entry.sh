@@ -23,10 +23,4 @@ done
 haproxy -f haproxy.conf
 echo "[*] Done"
 
-#echo "[!] Starting TOR SOCKS proxy"
-#tor -f tor.conf 
-
-#echo "[!] Starting Polipo HTTP proxy"
-#polipo -c polipo.conf
-
 sh
