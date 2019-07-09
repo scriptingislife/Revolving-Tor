@@ -7,5 +7,5 @@ make build
 
 make daemon
 
-curl --proxy localhost:9060 http://httpbin.org/ip
+curl --proxy localhost:4000 http://httpbin.org/ip
 ```
